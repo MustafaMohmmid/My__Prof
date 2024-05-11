@@ -1,0 +1,19 @@
+/* 
+--- Don't start with Arabic Design. 
+--- Programmers Note : Don't use words direct in template.
+--- Padding and Margin for parent better than child.
+
+*/ 
+.show-menu {
+    left: 0;
+    right: auto;
+}
+@media screen and (max-width: 1023px) {
+    .nav__menu {
+        padding: 4.5rem 3rem 0 0;
+    }
+}
+.nav__close {
+    left: 1.5rem;
+    right: auto;
+}

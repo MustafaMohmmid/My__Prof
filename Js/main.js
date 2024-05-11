@@ -44,7 +44,7 @@ const sendEmail = (e) =>{
     emailjs.sendForm('service_14ewcau', 'template_fpvfnm1', '#contact-form', 'A1Tz1WdeGdscbSkF_')
         .then(() => {
             // Show sent message
-            contactMessage.textContent = 'Message sent successfully ✅'
+            contactMessage.textContent = ' تم إرسال الرسالة بنجاح, Message sent successfully ✅'
             // Remove message after five seconds
             setTimeout(() => {
                 contactMessage.textContent = ''
@@ -53,7 +53,7 @@ const sendEmail = (e) =>{
             contactForm.reset()
         }, () =>{
             //Show error message
-            contactMessage.textContent = 'Message not sent (service error) ❌'
+            contactMessage.textContent = ',عذرًا، لم يتم إرسال الرسالة (خطأ في الخدمة) Message not sent (service error) ❌'
         })
 }
 contactForm.addEventListener('submit', sendEmail)
