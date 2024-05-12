@@ -549,7 +549,7 @@ img,svg{
 }
 /* === BREAKPOINTS === */
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .container{
         margin-inline: 1rem;
     }
